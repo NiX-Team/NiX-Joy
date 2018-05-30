@@ -10,6 +10,10 @@ NiX-Joy 的技术分享资料
         <summary>06</summary>
         <a href="data-structure/平衡树--红黑树.md">红黑树的插入</a>
     </details>
+    <details>
+        <summary>05</summary>
+        <a href="java/java内存解析">java 内存解析</a>
+    </details>  
 </details>
 <details>
     <summary>2017</summary>
@@ -22,7 +26,7 @@ NiX-Joy 的技术分享资料
 ## Commit 相关
 
 * commit 格式为年月日加上文档名，比如 `2017/05/07 Markdown 基础`
-* 每个 topic 只需要提交一个 commit，把文档和索引的修改都放到一起
+* 每个 topic 只需要提交一个 commit，把文档和索引的修改都放到一起 
 
 ## 文档格式
 
@@ -52,3 +56,4 @@ NiX-Joy 的技术分享资料
 * 如果你觉得某位讲过相同 topic 的前辈写的文档可以复用，可以直接复用文档
 * 如果对原文档有修改，记得添加贡献人员和 CHANGELOG
 * 复用文档记得添加索引，不必删除旧索引
+
