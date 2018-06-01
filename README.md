@@ -5,6 +5,13 @@ NiX-Joy 的技术分享资料
 ## 索引
 
 <details>
+    <summary>2018</summary>
+    <details>
+        <summary>06</summary>
+        <a href="data-structure/平衡树--红黑树.md">红黑树的插入</a>
+    </details>
+</details>
+<details>
     <summary>2017</summary>
     <details>
         <summary>05</summary>
