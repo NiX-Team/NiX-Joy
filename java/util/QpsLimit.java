@@ -147,9 +147,11 @@ public final class QpsLimit {
             long now = nowSeconds();
             long nowQps;
             //保证滑动操作只执行一次 保证获取最新qps和窗口滑动原子性
-            synchronized (sign) {
-                if (now > end + PIECEWISE) {
-                    sliding();
+            if(now > end + PIECEWISE) {
+                synchronized (sign) {
+                    if (now > end + PIECEWISE) {
+                        sliding();
+                    }
                 }
             }
             nowQps = nowQps();
