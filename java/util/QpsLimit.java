@@ -1,10 +1,11 @@
-package com.alibaba.it.asset.web.workflow.util;
+package com.alibaba.it.asset.web.linkage.util;
+
 import lombok.ToString;
 import lombok.extern.slf4j.Slf4j;
+
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
-import java.util.concurrent.atomic.AtomicBoolean;
-import java.util.concurrent.atomic.AtomicLong;
+import java.util.concurrent.locks.ReentrantReadWriteLock;
 import java.util.function.Supplier;
 
 /**
@@ -29,7 +30,9 @@ public final class QpsLimit {
         //等待qps降低到限制一下执行
         wait,
         //只是记录下日志
-        noting_log
+        noting_log,
+        //不做任何操作
+        noting,
     }
 
     /**
@@ -45,6 +48,7 @@ public final class QpsLimit {
             switch (strategy) {
                 case throw_exception:throw new RuntimeException("qps limit fail");
                 case wait:wait(wait);break;
+                case noting:break;
                 case noting_log:log.warn("{} :qps to achieve limit . limit {}",Thread.currentThread().getName(),qps);break;
                 default:break;
             }
@@ -57,6 +61,10 @@ public final class QpsLimit {
      * */
     public static void acceptCancel(String sign) {
         WINDOWS.get(sign).cancel();
+    }
+
+    public static void cancel(String sign) {
+        WINDOWS.remove(sign);
     }
 
     /**
@@ -97,59 +105,56 @@ public final class QpsLimit {
             }
         }
     }
+
     /**
      * 检查调用qps是否超过限制
      * */
     private static boolean checkQps(String sign,long qps) {
-        synchronized (QpsLimit.class) {
-            if (!WINDOWS.containsKey(sign)) {
-                WINDOWS.put(sign,new SlidingWindow(sign,qps));
-                return false;
+        if (!WINDOWS.containsKey(sign)) {
+            synchronized (QpsLimit.class) {
+                if (!WINDOWS.containsKey(sign)) {
+                    WINDOWS.put(sign,new SlidingWindow(sign,qps));
+                    return false;
+                }
             }
         }
-        return WINDOWS.get(sign).check();
+        return WINDOWS.get(sign).clickQps();
     }
     @ToString
     private static class SlidingWindow {
         private final String sign;
         private final long limitQps;
         //分段 一段15秒
-        private static final int PIECEWISE = 15;
+        private static final int PIECEWISE = 5;
         //qps取样4段 15*4 60秒
-        private static final int ALL_PIECEWISE = 4;
-        private long start = 0;
-        private long end = 0;
+        private static final int ALL_PIECEWISE = 20;
+        private volatile long start = 0;
+        private volatile long end = 0;
         //一分钟分四段 每15秒设置一段
-        private final AtomicLong[] slidingRecord = new AtomicLong[ALL_PIECEWISE];
+        private volatile int[] slidingRecord = new int[ALL_PIECEWISE];
+        private final ReentrantReadWriteLock readWriteLock = new ReentrantReadWriteLock();
         private final Object lastWindowCLock = new Object();
-        private AtomicBoolean init = new AtomicBoolean(false);
-
         private SlidingWindow(String sign, long limitQps) {
             this.sign = sign;
             this.limitQps = limitQps;
+            init();
         }
         private void init() {
             for (int i = 0;i < ALL_PIECEWISE - 1;i ++) {
-                slidingRecord[i] = new AtomicLong(0L);
+                slidingRecord[i] = 0;
             }
-            slidingRecord[ALL_PIECEWISE - 1] = new AtomicLong(1L);
-            start = nowSeconds() - PIECEWISE * ALL_PIECEWISE;
-            end = nowSeconds() - PIECEWISE;
-            init.set(true);
-        }
-        public boolean check() {
-            if (!init.get()) {
-                init();
-            }
-            return clickQps();
+            slidingRecord[ALL_PIECEWISE - 1] = 1;
+            start = nowSeconds() - (PIECEWISE - 1) * ALL_PIECEWISE;
+            end = nowSeconds();
         }
         private boolean clickQps() {
             long now = nowSeconds();
             long nowQps;
             //保证滑动操作只执行一次 保证获取最新qps和窗口滑动原子性
-            if(now > end + PIECEWISE) {
+            if (now >= end + PIECEWISE) {
+                //乐观锁
                 synchronized (sign) {
-                    if (now > end + PIECEWISE) {
+                    if (now >= end + PIECEWISE) {
                         sliding();
                     }
                 }
@@ -163,40 +168,49 @@ public final class QpsLimit {
          * 保证只能有一个线程进行滑动操作
          * */
         private void sliding() {
-            //获取这次qps之前的起始窗口
-            long agoStart = start;
-            start = nowSeconds() - PIECEWISE * ALL_PIECEWISE;
-            end = nowSeconds() - PIECEWISE;
-            //获取窗口开始到现在的窗口跨度
-            int span = (int) ((start - agoStart) /PIECEWISE);
-            //如果跨度大于窗口总大小
-            if (span >= PIECEWISE) {
-                for (int i = 0;i < ALL_PIECEWISE;i ++) {
-                    slidingRecord[i].set(0L);
+            ReentrantReadWriteLock.WriteLock writeLock = readWriteLock.writeLock();
+            try {
+                //获取这次qps之前的起始窗口
+                long agoStart = start;
+                start = nowSeconds() - (PIECEWISE - 1) * ALL_PIECEWISE;
+                end = nowSeconds();
+                //获取窗口开始到现在的窗口跨度
+                int span = (int) ((start - agoStart) /PIECEWISE);
+                writeLock.lock();
+                //如果跨度大于窗口总大小
+                if (span >= PIECEWISE) {
+                    for (int i = 0;i < ALL_PIECEWISE;i ++) {
+                        slidingRecord[i] = 0;
+                    }
+                } else {
+                    //跨度小于窗口数量 按跨度空隙进行滑动窗口
+                    System.arraycopy(slidingRecord, span, slidingRecord, 0, ALL_PIECEWISE - span);
+                    for (int i = ALL_PIECEWISE - span;i < ALL_PIECEWISE;i ++) {
+                        slidingRecord[i] = 0;
+                    }
                 }
-            } else {
-                //跨度小于窗口数量 按跨度空隙进行滑动窗口
-                for (int i = 0;i < ALL_PIECEWISE - span;i ++) {
-                    slidingRecord[i].set(slidingRecord[i + span].get());
-                }
-                for (int i = ALL_PIECEWISE - span;i < ALL_PIECEWISE;i ++) {
-                    slidingRecord[i].set(0L);
-                }
+            }finally {
+                writeLock.unlock();
             }
         }
         /**
          * 获取当前的qps
          * */
         private long nowQps() {
-            long qps = 0;
-            for (int i = 0;i < ALL_PIECEWISE - 1;i ++) {
-                qps += slidingRecord[i].get();
+            ReentrantReadWriteLock.ReadLock readLock = readWriteLock.readLock();
+            try {
+                readLock.lock();
+                long qps = 0;
+                for (int i = 0;i < ALL_PIECEWISE - 1;i ++) {
+                    qps += slidingRecord[i];
+                }
+                synchronized (lastWindowCLock) {
+                    qps += ++ slidingRecord[ALL_PIECEWISE - 1];
+                }
+                return qps;
+            }finally {
+                readLock.unlock();
             }
-            synchronized (lastWindowCLock) {
-                slidingRecord[ALL_PIECEWISE - 1].getAndIncrement();
-                qps += slidingRecord[ALL_PIECEWISE - 1].get();
-            }
-            return qps;
         }
         private long nowSeconds() {
             return System.currentTimeMillis() / 1_000;
@@ -207,7 +221,7 @@ public final class QpsLimit {
          * */
         public void cancel() {
             synchronized (lastWindowCLock) {
-                slidingRecord[ALL_PIECEWISE - 1].getAndAdd(-1L);
+                slidingRecord[ALL_PIECEWISE - 1] -= 1L;
             }
         }
     }
@@ -231,3 +245,4 @@ public final class QpsLimit {
         }
     }
 }
+
