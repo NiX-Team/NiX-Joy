@@ -28,6 +28,9 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="GA/贝叶斯思维/贝叶斯入门.md">贝叶斯入门</a>
             </blockquote>
+            <blockquote>
+                <a href="android/异步消息处理机制与android服务/异步消息处理机制与Android服务.md">异步消息处理机制与Android服务</a>
+            </blockquote>
         </details>
      </blockquote>
 </details>
