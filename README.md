@@ -9,10 +9,12 @@ NiX-Joy 的技术分享资料
     <summary>2018</summary>
     <blockquote>
         <details>
-			 <summary>09</summary>
+            <summary>05</summary>
             <blockquote>
-                <a href="android/异步消息处理机制与android服务/异步消息处理机制与Android服务.md">异步消息处理机制与Android服务</a>
+                <a href="java/java内存解析">java 内存解析</a>
             </blockquote>
+        </details> 
+        <details>
             <summary>06</summary>
             <blockquote>
                 <a href="data-structure/平衡树--红黑树.md">红黑树的插入</a>
@@ -22,11 +24,14 @@ NiX-Joy 的技术分享资料
             </blockquote>
         </details>
         <details>
-            <summary>05</summary>
+            <summary>09</summary>
             <blockquote>
-                <a href="java/java内存解析">java 内存解析</a>
+                <a href="GA/贝叶斯思维/贝叶斯入门.md">贝叶斯入门</a>
             </blockquote>
-        </details> 
+            <blockquote>
+                <a href="android/异步消息处理机制与android服务/异步消息处理机制与Android服务.md">异步消息处理机制与Android服务</a>
+            </blockquote>
+        </details>
      </blockquote>
 </details>
 <details>
