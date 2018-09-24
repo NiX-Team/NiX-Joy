@@ -40,19 +40,19 @@
 
 常见的HTTP请求头
 
-![avatar](../img/request.jpg)
+![avatar](./img/request.jpg)
 
 图1.1
 
 常见的HTTP相应头
 
-![avatar](../img/respone.jpg)
+![avatar](./img/respone.jpg)
 
 图1.2
 
 常见的HTTP状态码
 
-![avatar](../img/status.jpg)
+![avatar](./img/status.jpg)
 
 图1.3
 
@@ -85,7 +85,7 @@
 
 流程图
 
-![avatar](../img/dns1.png)
+![avatar](./img/dns1.png)
 
 ## 5 CDN（Content Delivery Network）工作机制
 
@@ -128,7 +128,7 @@ CDN网络一般分为中心与边缘节点两部分，中心负责全局负载�
 
 ### 5.5 CDN工作原理
 
-![avatar](../img/cdn.png)
+![avatar](./img/cdn.png)
 
 
 ## 6 负载均衡
@@ -155,7 +155,7 @@ CDN网络一般分为中心与边缘节点两部分，中心负责全局负载�
 
 硬件负载均衡一般使用一台专门的硬件设备来转发请求
 
-![avatar](../img/hardware-balance.png)
+![avatar](./img/hardware-balance.png)
 
 * 软件负载均衡
 
