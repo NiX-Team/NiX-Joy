@@ -4,24 +4,48 @@ NiX-Joy 的技术分享资料
 
 ## 索引
 
+<blockquote>
 <details>
     <summary>2018</summary>
-    <details>
-        <summary>06</summary>
-        <a href="data-structure/平衡树--红黑树.md">红黑树的插入</a>
-    </details>
-    <details>
-        <summary>05</summary>
-        <a href="java/java内存解析">java 内存解析</a>
-    </details>  
+    <blockquote>
+        <details>
+            <summary>05</summary>
+            <blockquote>
+                <a href="java/java内存解析">java 内存解析</a>
+            </blockquote>
+        </details> 
+        <details>
+            <summary>06</summary>
+            <blockquote>
+                <a href="data-structure/平衡树--红黑树.md">红黑树的插入</a>
+            </blockquote>
+            <blockquote>
+                <a href="java/并发">Java 并发</a>
+            </blockquote>
+        </details>
+        <details>
+            <summary>09</summary>
+            <blockquote>
+                <a href="GA/贝叶斯思维/贝叶斯入门.md">贝叶斯入门</a>
+            </blockquote>
+            <blockquote>
+                <a href="android/异步消息处理机制与android服务/异步消息处理机制与Android服务.md">异步消息处理机制与Android服务</a>
+            </blockquote>
+        </details>
+     </blockquote>
 </details>
 <details>
     <summary>2017</summary>
+    <blockquote>
     <details>
         <summary>05</summary>
-        <a href="markdown/Markdown基础.md">Markdown 基础</a>
+        <blockquote>
+            <a href="markdown/Markdown基础.md">Markdown 基础</a>
+        </blockquote>
     </details>
+    </blockquote>
 </details>
+</blockquote>
 
 ## Commit 相关
 
