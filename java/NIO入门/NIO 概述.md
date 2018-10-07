@@ -133,6 +133,14 @@ public abstract class FileChannel
 
 最后推荐通读一遍官方对于nio 这几个包的介绍
 
+最后增加了一个 BIO, NIO Socket编程的示例。
+
+[BIO](./code/bio) (在nio当前目录的code/bio目录下)
+
+[NIO](./code/nio) (在nio当前目录的code/bio目录下)
+
+
+
 ## 贡献人员名单
 
 * gl
