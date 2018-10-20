@@ -46,6 +46,9 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="java/servlet重定向问题/Servlet重定向问题.md">Servlet重定向问题</a>
             </blockquote>
+            <blockquote>
+                <a href="Linux/Linux间进程通信/Linux间进程通信.md">Linux间进程通信</a>
+            </blockquote>
         </details>
         <details>
             <summary>10</summary>
