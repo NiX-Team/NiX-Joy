@@ -47,6 +47,12 @@ NiX-Joy 的技术分享资料
                 <a href="java/servlet重定向问题/Servlet重定向问题.md">Servlet重定向问题</a>
             </blockquote>
         </details>
+        <details>
+            <summary>10</summary>
+             <blockquote>
+                <a href="GA/贝叶斯网络与神经网络/BayesNetwork.md">贝叶斯网络</a>
+            </blockquote>
+        </details>
      </blockquote>
 </details>
 <details>
