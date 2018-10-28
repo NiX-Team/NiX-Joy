@@ -47,19 +47,19 @@ NiX-Joy 的技术分享资料
                 <a href="java/servlet重定向问题/Servlet重定向问题.md">Servlet重定向问题</a>
             </blockquote>
             <blockquote>
-                <a href="Linux/Linux间进程通信/Linux间进程通信.md">Linux间进程通信</a>
-            </blockquote>
-			<blockquote>
-                <a href="GA/knapsackProblem/KnapsackProblem.md">背包问题</a>
-            </blockquote>
-        </details>
-        <details>
-            <summary>10</summary>
-             <blockquote>
                 <a href="GA/贝叶斯网络与神经网络/BayesNetwork.md">贝叶斯网络</a>
             </blockquote>
+            <blockquote>
+                <a href="GA/knapsackProblem/KnapsackProblem.md">背包问题</a>
+            </blockquote>
+		      	<blockquote>
+                <a href="java/GC/GCmd.md">GC垃圾回收器</a>
+            </blockquote>
+            <blockquote>
+                <a href="Linux/Linux间进程通信/Linux间进程通信.md">Linux间进程通信</a>
+            </blockquote>
         </details>
-     </blockquote>
+	</blockquote>
 </details>
 <details>
     <summary>2017</summary>
