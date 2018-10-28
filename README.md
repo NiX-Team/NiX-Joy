@@ -59,6 +59,8 @@ NiX-Joy 的技术分享资料
                 <a href="Linux/Linux间进程通信/Linux间进程通信.md">Linux间进程通信</a>
             </blockquote>
         </details>
+	</blockquote>
+</details>
 <details>
     <summary>2017</summary>
     <blockquote>
