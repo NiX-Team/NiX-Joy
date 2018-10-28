@@ -46,6 +46,9 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="java/servlet重定向问题/Servlet重定向问题.md">Servlet重定向问题</a>
             </blockquote>
+			<blockquote>
+                <a href="java/GC/GCmd.md">GC垃圾回收器</a>
+            </blockquote>
         </details>
      </blockquote>
 </details>
