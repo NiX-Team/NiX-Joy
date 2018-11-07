@@ -98,5 +98,3 @@ AO预编译的过程跟GO类似，只是多了形参名作为AO属性名，将�
 ## CHANGELOG
 
 * v1.0 2018/10/28 无图版
-
-原文地址：http://gemini.iteye.com/blog/80317
