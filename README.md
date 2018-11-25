@@ -62,6 +62,12 @@ NiX-Joy 的技术分享资料
                 <a href="js/JS预编译过程.md">JS预编译过程</a>
             </blockquote>
         </details>
+        <details>
+            <summary>11</summary>
+            <blockquote>
+                <a href="GA\遗传算法\GeneticAlgorithms.md">遗传算法</a>
+            </blockquote>
+        </details>
 	</blockquote>
 </details>
 <details>
