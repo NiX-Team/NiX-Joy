@@ -66,6 +66,7 @@ NiX-Joy 的技术分享资料
             <summary>11</summary> 
             <blockquote>
                 <a href="algorithm\KMP\KMP.md">kmp</a>
+            </blockquote>
             <blockquote>
                 <a href="GA\遗传算法\GeneticAlgorithms.md">遗传算法</a>
             </blockquote>
