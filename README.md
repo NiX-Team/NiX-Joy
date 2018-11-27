@@ -63,11 +63,14 @@ NiX-Joy 的技术分享资料
             </blockquote>
         </details>
         <details>
-            <summary>11</summary>
+            <summary>11</summary> 
+            <blockquote>
+                <a href="algorithm\KMP\KMP.md">kmp</a>
+            </blockquote>
             <blockquote>
                 <a href="GA\遗传算法\GeneticAlgorithms.md">遗传算法</a>
             </blockquote>
-			<blockquote>
+			      <blockquote>
                 <a href="GA\分支界限法\分支界限法.md">分支界限法</a>
             </blockquote>
         </details>
