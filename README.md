@@ -34,14 +34,59 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="java/web请求过程/深入web请求过程.md">深入web请求过程</a>
             </blockquote>
+            <blockquote>
+                <a href="network/HTTP&HTTPS/HTTP&HTTPS.md">HTTP&HTTPS</a>
+            </blockquote>
         </details>
         <details>
             <summary>10</summary>
             <blockquote>
                 <a href="java/NIO入门/NIO 概述.md">NIO 概述</a>
             </blockquote>
+            <blockquote>
+                <a href="java/servlet重定向问题/Servlet重定向问题.md">Servlet重定向问题</a>
+            </blockquote>
+            <blockquote>
+                <a href="GA/贝叶斯网络与神经网络/BayesNetwork.md">贝叶斯网络</a>
+            </blockquote>
+            <blockquote>
+                <a href="GA/knapsackProblem/KnapsackProblem.md">背包问题</a>
+            </blockquote>
+		      	<blockquote>
+                <a href="java/GC/GCmd.md">GC垃圾回收器</a>
+            </blockquote>
+            <blockquote>
+                <a href="Linux/Linux间进程通信/Linux间进程通信.md">Linux间进程通信</a>
+            </blockquote>
+            <blockquote>
+                <a href="js/JS预编译过程.md">JS预编译过程</a>
+            </blockquote>
         </details>
-     </blockquote>
+        <details>
+            <summary>11</summary> 
+            <blockquote>
+                <a href="algorithm\KMP\KMP.md">kmp</a>
+            </blockquote>
+            <blockquote>
+                <a href="GA\遗传算法\GeneticAlgorithms.md">遗传算法</a>
+            </blockquote>
+			      <blockquote>
+                <a href="GA\分支界限法\分支界限法.md">分支界限法</a>
+            </blockquote>
+        </details>
+        <details>
+            <summary>12</summary>
+            <blockquote>
+                <a href="java/java2ee/JAVAEE_NORM.md">javaee规范</a>
+            </blockquote>
+            <blockquote>
+                <a href="java/spring/SPRING_IOC.md">springIOC</a>
+            </blockquote>
+            <blockquote>
+                <a href="java/并发/浅析volitile.md">浅析volatile</a>
+            </blockquote>
+        </details>
+	</blockquote>
 </details>
 <details>
     <summary>2017</summary>
