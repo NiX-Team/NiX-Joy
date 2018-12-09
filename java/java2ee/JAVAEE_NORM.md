@@ -1,10 +1,10 @@
-#JAVA2EE NORM
+# JAVA2EE NORM
 
-##JAVAEE 体系结构
+## JAVAEE 体系结构
 
 ![avatar](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1544104697&di=74df8ec3beb4c654c8c542dbbe10e681&imgtype=jpg&er=1&src=http%3A%2F%2Fimg.my.csdn.net%2Fuploads%2F201303%2F16%2F1363437529_9901.png)
 
-##JAVAEE 十三大规范
+## JAVAEE 十三大规范
 
 
 ### 1. JDBC
