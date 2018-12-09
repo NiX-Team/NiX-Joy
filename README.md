@@ -82,6 +82,9 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="java/spring/SPRING_IOC.md">springIOC</a>
             </blockquote>
+            <blockquote>
+                <a href="java/并发/浅析volitile.md">浅析volatile</a>
+            </blockquote>
         </details>
 	</blockquote>
 </details>
