@@ -62,6 +62,33 @@ NiX-Joy 的技术分享资料
                 <a href="js/JS预编译过程.md">JS预编译过程</a>
             </blockquote>
         </details>
+        <details>
+            <summary>11</summary> 
+            <blockquote>
+                <a href="algorithm\KMP\KMP.md">kmp</a>
+            </blockquote>
+            <blockquote>
+                <a href="GA\遗传算法\GeneticAlgorithms.md">遗传算法</a>
+            </blockquote>
+			      <blockquote>
+                <a href="GA\分支界限法\分支界限法.md">分支界限法</a>
+            </blockquote>
+        </details>
+        <details>
+            <summary>12</summary>
+            <blockquote>
+                <a href="java/java2ee/JAVAEE_NORM.md">javaee规范</a>
+            </blockquote>
+            <blockquote>
+                <a href="java/spring/SPRING_IOC.md">springIOC</a>
+            </blockquote>
+            <blockquote>
+                <a href="java/并发/浅析volitile.md">浅析volatile</a>
+            </blockquote>
+            <blockquote>
+                <a href="js/JS数组(改变原数组的方法).md">JS数组(改变原数组的方法)</a>
+            </blockquote>
+        </details>
 	</blockquote>
 </details>
 <details>
