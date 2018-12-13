@@ -85,6 +85,9 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="java/并发/浅析volitile.md">浅析volatile</a>
             </blockquote>
+            <blockquote>
+                <a href="js/JS数组(改变原数组的方法).md">JS数组(改变原数组的方法)</a>
+            </blockquote>
         </details>
 	</blockquote>
 </details>
