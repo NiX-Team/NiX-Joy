@@ -88,6 +88,9 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="js/JS数组(改变原数组的方法).md">JS数组(改变原数组的方法)</a>
             </blockquote>
+			<blockquote>
+                <a href="java/类加载与双亲委派模式/Java类加载与双亲委派模式.md">Java类加载与双亲委派模式</a>
+            </blockquote>
         </details>
 	</blockquote>
 </details>
