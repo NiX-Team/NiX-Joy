@@ -23,7 +23,6 @@ NiX-Joy 的技术分享资料
             <summary>05</summary>
             <blockquote>
                 <a href="java/java内存解析/Java内存解析.md">java 内存解析</a>
-                <a href="java/java内存解析/java内存解析.md">java 内存解析</a>
             </blockquote>
         </details> 
         <details>
