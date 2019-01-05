@@ -6,12 +6,23 @@ NiX-Joy 的技术分享资料
 
 <blockquote>
 <details>
+    <summary>2019</summary>
+    <blockquote>
+    <details>
+        <summary>01</summary>
+        <blockquote>
+            <a href="java/synchronized的升级/synchronized.md">synchronied的升级</a>
+        </blockquote>
+    </details>
+    </blockquote>
+</details>
+<details>
     <summary>2018</summary>
     <blockquote>
         <details>
             <summary>05</summary>
             <blockquote>
-                <a href="java/java内存解析">java 内存解析</a>
+                <a href="java/java内存解析/java内存解析.md">java 内存解析</a>
             </blockquote>
         </details> 
         <details>
