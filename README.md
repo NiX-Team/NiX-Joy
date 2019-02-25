@@ -14,6 +14,12 @@ NiX-Joy 的技术分享资料
             <a href="java/synchronized的升级/synchronized.md">synchronied的升级</a>
         </blockquote>
     </details>
+    <details>
+        <summary>02</summary>
+        <blockquote>
+            <a href="Search\Elasticsearch\elasticsearch · 入门.md">elasticsearch入门</a>
+        </blockquote>
+    </details> 
     </blockquote>
 </details>
 <details>
@@ -101,6 +107,9 @@ NiX-Joy 的技术分享资料
             </blockquote>
             <blockquote>
                 <a href="network/UDP_TCP/UDP_TCP.md">UDP_TCP</a>
+            </blockquote>
+			<blockquote>
+                <a href="java/类加载与双亲委派模式/Java类加载与双亲委派模式.md">Java类加载与双亲委派模式</a>
             </blockquote>
         </details>
 	</blockquote>
