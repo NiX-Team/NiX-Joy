@@ -26,7 +26,7 @@ NiX-Joy 的技术分享资料
             <a href="java/布隆过滤器/布隆过滤器.md">布隆过滤器</a>
         </blockquote>
         <blockquote>
-            <a href="database/数据库索引/index.md">数据库索引用</a>
+            <a href="database/数据库索引/index.md">数据库索引</a>
         </blockquote>
     </details> 
     </blockquote>
