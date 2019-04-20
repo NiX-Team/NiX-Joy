@@ -20,7 +20,7 @@ NiX-Joy 的技术分享资料
             <a href="Search\Elasticsearch\elasticsearch · 入门.md">elasticsearch入门</a>
         </blockquote>
     </details> 
-	     <details>
+    <details>
         <summary>03</summary>
         <blockquote>
             <a href="java/布隆过滤器/布隆过滤器.md">布隆过滤器</a>
@@ -28,7 +28,13 @@ NiX-Joy 的技术分享资料
         <blockquote>
             <a href="database/数据库索引/index.md">数据库索引</a>
         </blockquote>
-    </details> 
+    </details>
+    <details>
+        <summary>04</summary>
+        <blockquote>
+            <a href="data-structure\查找树\查找树.md">查找树</a>
+        </blockquote>
+    </details>
     </blockquote>
 </details>
 <details>
