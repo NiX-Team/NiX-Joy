@@ -20,6 +20,12 @@ NiX-Joy 的技术分享资料
             <a href="Search\Elasticsearch\elasticsearch · 入门.md">elasticsearch入门</a>
         </blockquote>
     </details> 
+    <details>
+        <summary>04</summary>
+        <blockquote>
+            <a href="data-structure\查找树\查找树.md">查找树</a>
+        </blockquote>
+    </details>
     </blockquote>
 </details>
 <details>
