@@ -130,27 +130,32 @@ NiX-Joy 的技术分享资料
                 <a href="java/并发/浅析volitile.md">浅析volatile</a>
             </blockquote>
             <blockquote>
+                <a href="java/类加载与双亲委派模式/Java类加载与双亲委派模式.md">Java类加载与双亲委派</a>
+            </blockquote>
+            <blockquote>
                 <a href="js/JS数组(改变原数组的方法).md">JS数组(改变原数组的方法)</a>
             </blockquote>
             <blockquote>
                 <a href="network/UDP_TCP/UDP_TCP.md">UDP_TCP</a>
             </blockquote>
-
         </details>
-	</blockquote>
+        </blockquote>
 </details>
-  
 <details>
-  <summary>2017</summary>
-  <blockquote>
-      <details>
-          <summary>05</summary>
-          <blockquote>
-              <a href="markdown/Markdown基础.md">Markdown 基础</a>
-          </blockquote>
-      </details>
-  </blockquote>
+    <summary>2017</summary>
+        <blockquote>
+            <details>
+                <summary>05</summary>
+                <blockquote>
+                    <a href="markdown/Markdown基础.md">Markdown 基础</a>
+                </blockquote>
+            </details>
+        </blockquote>
 </details>
+</blockquote>
+
+  
+
 </blockquote>
 
 ## Commit 相关
