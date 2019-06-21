@@ -40,6 +40,9 @@ NiX-Joy 的技术分享资料
           <blockquote>
               <a href="distribution/zookeeper实现分布式锁/zookeeper实现分布式锁.md">zookeeper实现分布式锁</a>
           </blockquote>
+          <blockquote>
+              <a href="algorithm/NeuralNetwork/NeuralNetwork.md">神经网络</a>
+          </blockquote>
       </details>
     </blockquote>
 </details>
