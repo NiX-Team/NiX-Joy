@@ -68,6 +68,9 @@ NiX-Joy 的技术分享资料
                 <a href="algorithm\KMP\KMP.md">kmp</a>
             </blockquote>
             <blockquote>
+                <a href="algorithm\NeuralNetwork\NeuralNetwork.md">神经网络</a>
+            </blockquote>
+            <blockquote>
                 <a href="GA\遗传算法\GeneticAlgorithms.md">遗传算法</a>
             </blockquote>
 			      <blockquote>
