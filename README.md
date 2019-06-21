@@ -6,12 +6,50 @@ NiX-Joy 的技术分享资料
 
 <blockquote>
 <details>
+    <summary>2019</summary>
+    <blockquote>
+      <details>
+          <summary>01</summary>
+          <blockquote>
+              <a href="java/synchronized的升级/synchronized.md">synchronied的升级</a>
+          </blockquote>
+      </details>
+      <details>
+          <summary>02</summary>
+          <blockquote>
+              <a href="Search\Elasticsearch\elasticsearch · 入门.md">elasticsearch入门</a>
+          </blockquote>
+      </details> 
+      <details>
+          <summary>03</summary>
+          <blockquote>
+              <a href="java/布隆过滤器/布隆过滤器.md">布隆过滤器</a>
+          </blockquote>
+          <blockquote>
+              <a href="database/数据库索引/index.md">数据库索引</a>
+          </blockquote>
+      </details>
+      <details>
+          <summary>04</summary>
+          <blockquote>
+              <a href="data-structure\查找树\查找树.md">查找树</a>
+          </blockquote>
+      </details>
+      <details>
+          <summary>06</summary>
+          <blockquote>
+              <a href="distribution/zookeeper实现分布式锁/zookeeper实现分布式锁.md">zookeeper实现分布式锁</a>
+          </blockquote>
+      </details>
+    </blockquote>
+</details>
+<details>
     <summary>2018</summary>
     <blockquote>
         <details>
             <summary>05</summary>
             <blockquote>
-                <a href="java/java内存解析">java 内存解析</a>
+                <a href="java/java内存解析/Java内存解析.md">java 内存解析</a>
             </blockquote>
         </details> 
         <details>
@@ -91,19 +129,21 @@ NiX-Joy 的技术分享资料
             <blockquote>
                 <a href="network/UDP_TCP/UDP_TCP.md">UDP_TCP</a>
             </blockquote>
+
         </details>
 	</blockquote>
 </details>
+  
 <details>
-    <summary>2017</summary>
-    <blockquote>
-    <details>
-        <summary>05</summary>
-        <blockquote>
-            <a href="markdown/Markdown基础.md">Markdown 基础</a>
-        </blockquote>
-    </details>
-    </blockquote>
+  <summary>2017</summary>
+  <blockquote>
+      <details>
+          <summary>05</summary>
+          <blockquote>
+              <a href="markdown/Markdown基础.md">Markdown 基础</a>
+          </blockquote>
+      </details>
+  </blockquote>
 </details>
 </blockquote>
 
