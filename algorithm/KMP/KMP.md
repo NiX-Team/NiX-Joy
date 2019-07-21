@@ -24,3 +24,5 @@ ps:next数组的起始下标是从1开始
 * 当next[k] = n代表前缀与后缀的字符串匹配而且长为n。
 
 * 当next[k] = 1代表接下下来的匹配需要子串的首字符与父串的当前匹配位置匹配。
+
+[kmp代码实现](https://github.com/forestMr/forest-algorithm/tree/master/src/com/company/algorithm/kmp)
