@@ -8,6 +8,27 @@ NiX-Joy 的技术分享资料
 <details>
     <summary>2019</summary>
     <blockquote>
+    <details>
+        <summary>01</summary>
+        <blockquote>
+            <a href="java/synchronized的升级/synchronized.md">synchronied的升级</a>
+        </blockquote>
+    </details>
+    <details>
+        <summary>02</summary>
+        <blockquote>
+            <a href="Search\Elasticsearch\elasticsearch · 入门.md">elasticsearch入门</a>
+        </blockquote>
+    </details> 
+	     <details>
+        <summary>03</summary>
+        <blockquote>
+            <a href="java/布隆过滤器/布隆过滤器.md">布隆过滤器</a>
+        </blockquote>
+        <blockquote>
+            <a href="database/数据库索引/index.md">数据库索引</a>
+        </blockquote>
+    </details> 
       <details>
           <summary>01</summary>
           <blockquote>
